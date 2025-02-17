@@ -116,8 +116,6 @@ pipeline {
                 }
             }
         }
-
-
         // stage('Deploy with ArgoCD') {
         //     steps {
         //         script {
