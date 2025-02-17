@@ -11,4 +11,6 @@ public class sampleEntity {
     @Id
     private int id;
     private String name;
+
+
 }
