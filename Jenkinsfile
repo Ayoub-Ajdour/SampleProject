@@ -22,7 +22,7 @@ pipeline {
         stage('🔄 Install Git & Checkout Code') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'githubt', variable: 'GITHUB_TOKEN')]) {
+                    withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
                         sh 'echo $GITHUB_TOKEN'
                         sh 'git config --global user.name "Ayoub Ajdour"'
                         sh 'git config --global user.email "ayoubajdour20@gmail.com"'
